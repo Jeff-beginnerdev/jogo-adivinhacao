@@ -1,1 +1,12 @@
 # jogo-adivinhacao
+
+import random
+
+numero_secreto = random.randint(1, 10)
+
+chute = int(input("Adivinhe o número de 1 a 10: "))
+
+if chute == numero_secreto:
+    print("Você acertou! 🎉")
+else:
+    print("Errou! O número era", numero_secreto)
